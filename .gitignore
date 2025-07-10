@@ -1,0 +1,18 @@
+# Node.js 依赖
+node_modules/
+
+# TypeScript 构建输出目录
+dist/
+
+# Shell 脚本目录（如果你不想提交）
+sh/
+
+# 编辑器/IDE 文件
+.vscode/
+*.log
+
+# 环境配置文件
+.env
+
+# macOS 系统文件
+.DS_Store

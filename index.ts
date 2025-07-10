@@ -1,31 +1,31 @@
-// 自动生成的工具函数汇总文件
+// ⚙️ 自动生成的工具函数汇总文件，请勿手动修改
 
-import copyToClipboard from './copyToClipboard';
-import debounce from './debounce';
-import deepClone from './deepClone';
-import extractVideoFrame from './extractVideoFrame';
-import formatFileSize from './formatFileSize';
-import formatThousands from './formatThousands';
-import formatTime from './formatTime';
-import getBase64 from './getBase64';
-import getQueryParam from './getQueryParam';
-import simpleQsStringify from './simpleQsStringify';
-import throttle from './throttle';
-import toFixedFix from './toFixedFix';
+import copyToClipboard from './tools/copyToClipboard';
+import debounce from './tools/debounce';
+import deepClone from './tools/deepClone';
+import extractVideoFrame from './tools/extractVideoFrame';
+import formatFileSize from './tools/formatFileSize';
+import formatThousands from './tools/formatThousands';
+import formatTime from './tools/formatTime';
+import getBase64 from './tools/getBase64';
+import getQueryParam from './tools/getQueryParam';
+import simpleQsStringify from './tools/simpleQsStringify';
+import throttle from './tools/throttle';
+import toFixedFix from './tools/toFixedFix';
 
 const toolFun = {
-    copyToClipboard,
-    debounce,
-    deepClone,
-    extractVideoFrame,
-    formatFileSize,
-    formatThousands,
-    formatTime,
-    getBase64,
-    getQueryParam,
-    simpleQsStringify,
-    throttle,
-    toFixedFix,
+	copyToClipboard,
+	debounce,
+	deepClone,
+	extractVideoFrame,
+	formatFileSize,
+	formatThousands,
+	formatTime,
+	getBase64,
+	getQueryParam,
+	simpleQsStringify,
+	throttle,
+	toFixedFix,
 };
 
 export default toolFun;
