@@ -1,4 +1,5 @@
 #!/bin/bash
+# 执行方法 ./publish-npm.sh patch
 
 cd "$(dirname "$0")/.."
 
