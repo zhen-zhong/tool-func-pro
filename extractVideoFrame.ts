@@ -4,7 +4,7 @@
  * @param frameTime 可选，获取第几秒的帧，默认 0 秒
  * @returns Promise<string> Base64 图片（dataURL）
  */
-export async function extractVideoFrame(
+async function extractVideoFrame(
     file: File,
     frameTime: number = 0
 ): Promise<string> {
@@ -44,3 +44,5 @@ export async function extractVideoFrame(
         };
     });
 }
+
+export default extractVideoFrame
