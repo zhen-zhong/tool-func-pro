@@ -20,3 +20,5 @@ function formatThousands(num: number | string): string {
 
     return decimalPart ? `${withThousands}.${decimalPart}` : withThousands;
 }
+
+export default formatThousands

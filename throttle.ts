@@ -16,3 +16,5 @@ function throttle<T extends (...args: any[]) => any>(fn: T, interval: number): (
         }
     };
 }
+
+export default throttle

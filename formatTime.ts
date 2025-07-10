@@ -48,3 +48,5 @@ function formatTime(time: number | string | Date, format: string): string {
 
     return result;
 }
+
+export default formatTime

@@ -38,3 +38,5 @@ function deepClone<T>(source: T): T {
     }
     return cloneObj as T;
 }
+
+export default deepClone

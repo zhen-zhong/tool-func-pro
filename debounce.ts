@@ -16,3 +16,5 @@ function debounce<T extends (...args: any[]) => any>(fn: T, delay: number): (...
         }, delay);
     };
 }
+
+export default debounce;

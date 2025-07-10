@@ -26,3 +26,6 @@ function getQueryParam(
         return null;
     }
 }
+
+
+export default getQueryParam

@@ -23,3 +23,5 @@ function simpleQsStringify(obj: Record<string, any>): string {
 
     return parts.join('&');
 }
+
+export default simpleQsStringify
