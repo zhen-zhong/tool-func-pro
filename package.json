@@ -1,6 +1,6 @@
 {
   "name": "tool-func-pro",
-  "version": "1.0.8",
+  "version": "1.0.9",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -29,5 +29,4 @@
       "types": "./dist/index.d.ts"
     }
   }
-  
 }
