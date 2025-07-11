@@ -32,8 +32,8 @@ done
 echo "};" >> "$OUTPUT_FILE"
 echo "" >> "$OUTPUT_FILE"
 
-# 3. 生成默认导出的对象
-echo "const toolFun = {" >> "$OUTPUT_FILE"
+# 3. 生成默认导出的对象，改名为 toolFunObj，避免和命名导出冲突
+echo "const toolFunObj = {" >> "$OUTPUT_FILE"
 for file in "$TOOL_DIR"/*.ts; do
   filename=$(basename -- "$file")
   if [[ "$filename" != "$EXCLUDE_FILE" ]]; then
@@ -43,7 +43,9 @@ for file in "$TOOL_DIR"/*.ts; do
 done
 echo "};" >> "$OUTPUT_FILE"
 echo "" >> "$OUTPUT_FILE"
-echo "export default toolFun;" >> "$OUTPUT_FILE"
+
+# 4. 默认导出改名后的对象
+echo "export default toolFunObj;" >> "$OUTPUT_FILE"
 echo "" >> "$OUTPUT_FILE"
 
 echo "✅ 工具函数索引已生成：$OUTPUT_FILE"

@@ -28,7 +28,7 @@ export {
   toFixedFix,
 };
 
-const toolFun = {
+const toolFunObj = {
   copyToClipboard,
   debounce,
   deepClone,
@@ -43,5 +43,5 @@ const toolFun = {
   toFixedFix,
 };
 
-export default toolFun;
+export default toolFunObj;
 
