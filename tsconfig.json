@@ -10,7 +10,8 @@
     "declaration": true, 
     "declarationDir": "dist",
     "sourceMap": true,
-    "outDir": "dist"
+    "outDir": "dist",
+    "importHelpers": true,   
   },
   "include": ["index.ts", "tools/**/*.ts"],
   "exclude": ["node_modules", "dist", "rollup.config.js"]
