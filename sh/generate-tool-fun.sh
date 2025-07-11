@@ -20,17 +20,30 @@ done
 
 echo "" >> "$OUTPUT_FILE"
 
-# 2. 生成工具函数对象
+# 2. 生成 export {...} 命名导出
+echo "export {" >> "$OUTPUT_FILE"
+for file in "$TOOL_DIR"/*.ts; do
+  filename=$(basename -- "$file")
+  if [[ "$filename" != "$EXCLUDE_FILE" ]]; then
+    moduleName="${filename%.ts}"
+    echo "  $moduleName," >> "$OUTPUT_FILE"
+  fi
+done
+echo "};" >> "$OUTPUT_FILE"
+echo "" >> "$OUTPUT_FILE"
+
+# 3. 生成默认导出的对象
 echo "const toolFun = {" >> "$OUTPUT_FILE"
 for file in "$TOOL_DIR"/*.ts; do
   filename=$(basename -- "$file")
   if [[ "$filename" != "$EXCLUDE_FILE" ]]; then
     moduleName="${filename%.ts}"
-    echo -e "\t$moduleName," >> "$OUTPUT_FILE"
+    echo -e "  $moduleName," >> "$OUTPUT_FILE"
   fi
 done
 echo "};" >> "$OUTPUT_FILE"
 echo "" >> "$OUTPUT_FILE"
 echo "export default toolFun;" >> "$OUTPUT_FILE"
+echo "" >> "$OUTPUT_FILE"
 
 echo "✅ 工具函数索引已生成：$OUTPUT_FILE"
