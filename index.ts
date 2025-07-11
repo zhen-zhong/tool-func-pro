@@ -13,19 +13,35 @@ import simpleQsStringify from './tools/simpleQsStringify';
 import throttle from './tools/throttle';
 import toFixedFix from './tools/toFixedFix';
 
+export {
+  copyToClipboard,
+  debounce,
+  deepClone,
+  extractVideoFrame,
+  formatFileSize,
+  formatThousands,
+  formatTime,
+  getBase64,
+  getQueryParam,
+  simpleQsStringify,
+  throttle,
+  toFixedFix,
+};
+
 const toolFun = {
-	copyToClipboard,
-	debounce,
-	deepClone,
-	extractVideoFrame,
-	formatFileSize,
-	formatThousands,
-	formatTime,
-	getBase64,
-	getQueryParam,
-	simpleQsStringify,
-	throttle,
-	toFixedFix,
+  copyToClipboard,
+  debounce,
+  deepClone,
+  extractVideoFrame,
+  formatFileSize,
+  formatThousands,
+  formatTime,
+  getBase64,
+  getQueryParam,
+  simpleQsStringify,
+  throttle,
+  toFixedFix,
 };
 
 export default toolFun;
+
